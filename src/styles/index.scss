@@ -1,71 +1,59 @@
 @import "~bootstrap/scss/bootstrap.scss";
-*{
-    margin: 0%;
-    padding: 0%;
-}
-
-body{
-    background-color: #363636;
-}
 
 // div{
 //     border: 2px solid red;
 // }
 
-.controls-container{
-    height: 50px;
-    background-color: rgba(41,41,42,255);
-
+*{
+    font-family: 'Roboto', sans-serif;
 }
 
-.playList-container{
-    margin-bottom: 25px;
+body{
+    background-color: rgba(229,229,229,255);
 }
 
-.btn-controls{
-    width: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+h1{
+    color: red;
+    font-size: 80px;
+}
+
+.task{
+    font-size: 21px;
+    font-weight: 500;
+}
+
+input{
+    border: none;
+    background-color: rgba(243,243,243,255);
+        outline:none !important;
+    outline-width: 0 !important;
+}
+
+.app-container{
+    background-color: rgba(243,243,243,255);
+    box-shadow: 0px 14px 30px -1px rgba(0,0,0,0.32);
+}
+
+.left-task{
+    font-size: 13px;
+    font-weight: 500;
+}
+.delete-btn{
     border: none;
     background-color: transparent;
-    color: white;
-}
-
-.fa-play, .fa-pause{
-    font-size: 25px
-}
-
-.fa-caret-left, .fa-caret-right{
-    color: rgb(141, 141, 141);
-}
-
-.song-btn{
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-left-color: transparent;
-    border-bottom-color: rgba(126,127,127,255);
-    
-}
-.selected{
-    background-color: blue;
-}
-
-.hide-play{
     display: none;
-    font-size: 15px;
-    padding-right: 20px;
-    color: rgba(126,127,127,255);
 }
 
-.song-btn{
-    background-color: rgba(21,21,22,255);
-    color: white;
+.logo-close{
+    width: 13px;
 }
 
-.song-btn:hover{
-    background-color: rgba(40,40,41,255);
-    .hide-play{
+.task-container:hover{
+    .delete-btn{
         display: inline-block;
     }
+}
+
+.delete-btn:hover{
+    background-color: red;
 }

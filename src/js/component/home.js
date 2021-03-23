@@ -1,9 +1,10 @@
 import React from "react";
-import { MusicPlayer } from "../component/musicPlayer/musicPlayer";
+
+//include images into your bundle
+import rigoImage from "../../img/rigo-baby.jpg";
+import { Todos } from "./todos";
+
+//create your first component
 export function Home() {
-	return (
-		<div>
-			<MusicPlayer />
-		</div>
-	);
+	return <Todos />;
 }
